@@ -27,6 +27,9 @@ PGOPTIONS="-c shared_buffers=128MB -c work_mem=4MB -c maintenance_work_mem=32MB 
 # N8N
 
 ```
-N8N_WORKER_THREADS=1
-NODE_OPTIONS=–max_old_space_size=256
+EXECUTIONS_PROCESS="main"
+EXECUTIONS_DATA_PRUNE="true"
+EXECUTIONS_DATA_PRUNE_MAXAGE="24"
+NODE_OPTIONS="--max-old-space-size=256"
+N8N_WORKER_THREADS="1"
 ```
