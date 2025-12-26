@@ -29,12 +29,15 @@ PGOPTIONS="-c shared_buffers=128MB -c work_mem=4MB -c maintenance_work_mem=32MB 
 https://railway.com/deploy/n8n-cheapest-to-run
 
 ```
-N8N_LOG_LEVEL="error"
 EXECUTIONS_DATA_SAVE_ON_SUCCESS="false"
 QUEUE_BULL_LOG_LEVEL="error"
 EXECUTIONS_PROCESS="queue"
 EXECUTIONS_DATA_PRUNE="true"
 EXECUTIONS_DATA_PRUNE_MAXAGE="24"
+
 NODE_OPTIONS="--max-old-space-size=256"
+
+N8N_LOG_LEVEL="error"
+N8N_DEFAULT_BINARY_DATA_MODE=filesystem
 N8N_WORKER_THREADS="1"
 ```
