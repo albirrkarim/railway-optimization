@@ -23,3 +23,10 @@ MYSQL_PERFORMANCE_SCHEMA="0"
 ```
 PGOPTIONS="-c shared_buffers=128MB -c work_mem=4MB -c maintenance_work_mem=32MB -c effective_cache_size=256MB -c max_connections=15"
 ```
+
+# N8N
+
+```
+N8N_WORKER_THREADS=1
+NODE_OPTIONS=–max_old_space_size=256
+```
