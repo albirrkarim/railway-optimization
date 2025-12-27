@@ -1,6 +1,6 @@
 # Railway Optimization
 
-Reduce your memory usage by 90%
+Reduce your memory usage by 90%. Try free trial on first month using this link https://railway.com?referralCode=Dx-qfW
 
 # WordPress
 
