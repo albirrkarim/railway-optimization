@@ -2,6 +2,45 @@
 
 Reduce your memory usage by 90%. Try free trial on first month using this [link](https://railway.com?referralCode=Dx-qfW)
 
+# Next JS
+
+package.json
+```
+{
+  "name": "trading-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3009",
+    "build": "next build && cp -r .next/static .next/standalone/.next/",
+    "start": "node .next/standalone/server.js",
+  }
+}
+```
+
+next.config.ts
+
+```
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+    output: "standalone",
+
+    reactStrictMode: false,
+
+    productionBrowserSourceMaps: false,
+
+    poweredByHeader: false,
+
+    turbopack: {
+        root: __dirname,
+    },
+};
+
+export default nextConfig;
+
+```
+
 # WordPress
 
 ENV variable
